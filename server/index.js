@@ -1,10 +1,16 @@
 const express = require('express')
 const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
+const config = require('../nuxt.config.js')
+
 const app = express()
 
+const api = require('./api/index')
+const graphql = require('./graphql/index')
+
+app.use('/api', api)
+app.use('/graphql', graphql)
 // Import and Set Nuxt.js options
-const config = require('../nuxt.config.js')
 config.dev = !(process.env.NODE_ENV === 'production')
 
 async function start() {
