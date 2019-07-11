@@ -30,6 +30,22 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
+  },
+  mounted() {
+    const id = 6
+    const query = `
+    query getMessage($id: ID!) {
+      getMessage(id: $id) {
+        id
+      }
+      foo
+    }`
+    this.$axios
+      .$post('/graphql', {
+        query,
+        variables: { id }
+      })
+      .then(console.log)
   }
 }
 </script>
