@@ -1,5 +1,9 @@
 import Vue from 'vue'
-import Element from 'element-ui'
+import { Button, Select, TimePicker } from 'element-ui'
 import locale from 'element-ui/lib/locale/lang/en'
 
-Vue.use(Element, { locale })
+Vue.prototype.$ELEMENT = { locale }
+Vue.use(Button)
+Vue.use(Select)
+Vue.use(TimePicker)
+// Vue.use(Element, { locale })
