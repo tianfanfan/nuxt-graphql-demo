@@ -1,51 +1,27 @@
 <template>
   <div class="container">
-    <div>
-      <el-button>默认按钮</el-button>
-      <el-button type="primary">
-        主要按钮
-      </el-button>
-      <el-button type="success">
-        成功按钮
-      </el-button>
-      <el-button type="info">
-        信息按钮
-      </el-button>
-      <el-button type="warning">
-        警告按钮
-      </el-button>
-      <el-button type="danger">
-        危险按钮
-      </el-button>
-      <logo />
-      <h1 class="title">
-        nuxt-express-yarn
-      </h1>
-      <h2 class="subtitle">
-        My perfect Nuxt.js project
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+    <el-container>
+      <el-header>
+        <NuxtLinkCard />
+      </el-header>
+      <el-container>
+        <el-aside width="200px">
+          Aside
+        </el-aside>
+        <el-container>
+          <el-main>Main</el-main>
+          <el-footer>Footer</el-footer>
+        </el-container>
+      </el-container>
+    </el-container>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
+import NuxtLinkCard from '~/components/simple-component/NuxtLinkCard'
 export default {
   components: {
-    Logo
+    NuxtLinkCard
   },
   mounted() {
     const id = 6
@@ -72,8 +48,6 @@ export default {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .title {

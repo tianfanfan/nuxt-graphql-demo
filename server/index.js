@@ -8,8 +8,8 @@ const app = express()
 const api = require('./api/index')
 const graphql = require('./graphql/index')
 
+app.use('/api/graphql', graphql)
 app.use('/api', api)
-app.use('/graphql', graphql)
 // Import and Set Nuxt.js options
 config.dev = !(process.env.NODE_ENV === 'production')
 
