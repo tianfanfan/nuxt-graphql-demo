@@ -23,8 +23,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  // css: ['element-ui/lib/theme-chalk/index.css'],
-  css: ['@/assets/scss/element-variables.scss'],
+  css: ['element-ui/lib/theme-chalk/index.css'],
   /*
    ** Plugins to load before mounting the App
    */
