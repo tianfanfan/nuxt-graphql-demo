@@ -2,5 +2,5 @@
   "path-intellisense.mappings": {
     "~": "${workspaceRoot}/"
   },
-  "eslint.enable": false
+  "eslint.enable": true
 }
