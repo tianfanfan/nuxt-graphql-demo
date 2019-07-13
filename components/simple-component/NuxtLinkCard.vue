@@ -15,7 +15,6 @@
   </div>
 </template>
 <style lang="less" scoped>
-
 .links {
   padding: 15px 0;
 }
