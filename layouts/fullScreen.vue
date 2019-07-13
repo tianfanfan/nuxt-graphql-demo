@@ -1,5 +1,5 @@
 <template>
-  <div class="page">
+  <div class="main">
     <Header />
     <nuxt />
     <Footer />
@@ -21,4 +21,14 @@ export default {
 
 
 <style>
+
+  html,body,#__nuxt,#__layout{
+    height:100%;
+  }
+
+  .main{
+    position: relative;
+    height: 100%;
+  }
+
 </style>
