@@ -23,7 +23,8 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: ['./assets/css/fullpage.css'],
+  css: [],
+  // css: ['./assets/css/fullpage.css'],
   // css: ['element-ui/lib/theme-chalk/index.css'],
   /*
    ** Plugins to load before mounting the App
@@ -36,8 +37,8 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
-    '@nuxtjs/eslint-module',
-    ['fullpage-nuxt', { animate: true }]
+    '@nuxtjs/eslint-module'
+    // ['fullpage-nuxt', { animate: true }]
   ],
   /*
    ** Axios module configuration
