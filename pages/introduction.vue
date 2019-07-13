@@ -92,6 +92,11 @@
 </template>
 <script>
 export default {
+  head() {
+    return {
+      link: [{ rel: 'stylesheet', href: '/css/fullpage.css' }]
+    }
+  },
   data() {
     const that = this
     return {
